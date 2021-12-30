@@ -1,0 +1,7 @@
+{
+  "host": "nuspirelogs.cs3yhtb8orf4.us-east-2.rds.amazonaws.com",
+  "port": 3306,
+  "user": "admin",
+  "password": "password",
+  "database": "NuspireLogs"
+}
