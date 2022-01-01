@@ -8,11 +8,10 @@ const connection = mysql.createConnection({
   database: config.database
 });
 
-exports.handler = (event) => {
+// exports.handler = (event) => {
 
     let body;
     const sql = "SELECT * FROM logs";
-
     connection.query(sql, (err, results) => {
         if(err) {
             throw err;
@@ -20,12 +19,12 @@ exports.handler = (event) => {
             body = JSON.stringify(results);
         }
     })
-    const response = {
-        statusCode: 200,
-        body: body,
-    };
+//     const response = {
+//         statusCode: 200,
+//         body: body,
+//     };
 
-    return response;
-}
+//     return response;
+// }
 
 
